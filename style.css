@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #8a2be2;
+}
+
+header {
+    background-color: #FFFFFF;
+
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0px 8vw;
+}
+
+img {
+    width: 80px;
+}
+
+#btnSwitch {
+    padding: 10px;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5vw;
+    font-weight: bold;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    animation-name: btnOutHover;
+    animation-duration: 100ms;
+    animation-timing-function: linear;
+}
+
+#btnSwitch:hover {
+    color: #FFFFFF;
+
+    animation-name: btnOnHover;
+    animation-duration: 100ms;
+    animation-timing-function: linear;
+
+    background-color: #8a2be2;
+
+    box-shadow: 2px  2px 5px black;
+}
+
+@keyframes btnOnHover {
+    0% {
+        background-image: linear-gradient(90deg, #fff, #fff, #fff, #fff);
+    }
+    25% {
+        background-image: linear-gradient(90deg, #8a2be2, #fff, #fff, #fff);
+    }
+    50% {
+        background-image: linear-gradient(90deg, #8a2be2, #8a2be2, #fff, #fff);
+    }
+    75% {
+        background-image: linear-gradient(90deg, #8a2be2, #8a2be2, #8a2be2, #fff);
+    }
+    100% {
+        background-image: linear-gradient(90deg, #8a2be2, #8a2be2, #8a2be2, #8a2be2);
+    }
+}
+@keyframes btnOutHover {
+    0% {
+        background-image: linear-gradient(-90deg, #8a2be2, #8a2be2, #8a2be2, #8a2be2);
+    }
+    25% {
+        background-image: linear-gradient(-90deg, #8a2be2, #8a2be2, #8a2be2, #fff);
+    }
+    50% {
+        background-image: linear-gradient(-90deg, #8a2be2, #8a2be2, #fff, #fff);
+    }
+    75% {
+        background-image: linear-gradient(-90deg, #8a2be2, #fff, #fff, #fff);
+    }
+    100% {
+        background-image: linear-gradient(-90deg, #fff, #fff, #fff, #fff);
+    }
+}
+
+@media screen and (max-width: 410px) {
+    header img {
+        width: 200px;
+    }
+}
+
+main {
+    padding: 5px 10px;
+    margin: 20px auto;
+
+    width: 80%;
+
+    border-radius: 10px;
+
+    background-color: #faf1e5;
+}
+
+main div {
+    width: 80%;
+    padding: 10px;
+    text-align: start;
+
+    background-color: #fff;
+
+    margin: 5px auto;
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 3px  3px 5px black;
+}
+
+.title {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+}
+
+#Sobre p {
+    font-family: 'Josefin Sans', sans-serif;
+    text-indent: 20px;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+ul {
+    padding-left: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2em;
+}
+
+#Video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+video {
+    max-width: 65vw;
+}
+
+footer {
+    background-color: #FFFFFF;
+    height: 70px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: auto;
+}
+
+@media screen and (max-device-width: 450px) {
+    body, html {
+        overflow: hidden;
+    }
+    header {
+        height: 15vh;
+    }
+
+    img {
+        width: 170px;
+    }
+    #btnSwitch {
+        height: 100px;
+    }
+    main {
+        margin: 60px auto;
+        width: 92vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        font-size: 5em;
+    }
+
+    h2 {
+        font-size: 3.5em;
+    }
+
+    main div {
+        margin: 20px 0px;
+    }
+
+    main div p {
+        font-size: 2.5em;
+    }
+
+    main div ul {
+        font-size: 2em;
+        margin-left: 20px;
+    }
+
+    #Video {
+        height: 40%;
+    }
+
+    footer {
+        font-size: 1.8em;
+    }
+}
